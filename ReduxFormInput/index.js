@@ -11,7 +11,7 @@ const ReduxFormInput = () => {
       <Field
         name="field"
         props={{
-          placeholder: 'type something here',
+          placeholder: 'Type something here',
         }}
         component={MyInputWrapper}
       />
@@ -21,5 +21,4 @@ const ReduxFormInput = () => {
 
 export default reduxForm({
   form: 'test-form',
-  initialValues: {field: 'some'},
 })(ReduxFormInput);
